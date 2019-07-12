@@ -5,7 +5,7 @@
 conda create -n <name of virtual environment>
 ```
 
-2. Activate the virtual environment.
+1. Activate the virtual environment.
 
 ```bash
 activate <name of virutal environment>
@@ -22,8 +22,6 @@ conda install flask
 ```bash
 pip install gunicorn
 ```
-
-
 
 5. Make the directory where your project will live. 
 
@@ -64,6 +62,12 @@ if __name__ == '__main__':
 web: gunicorn app:app
 ```
 
+11. ??? I don't know, just do it.
+
+```bash
+pip freeze > requirements.txt
+```
+
 8. Set up your directory as a git repository.
 
 ```bash
@@ -82,11 +86,7 @@ git add .
 git commit -m "init commit"
 ```
 
-11. ??? I don't know, just do it.
 
-```bash
-pip freeze > requirements.txt
-```
 
 12. Log into Heroku. You must have an account and have downloaded the Heroku CLI.
 
