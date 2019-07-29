@@ -18,7 +18,7 @@ def mail():
         sender="test",
         recipients=["tmax818@mac.com"])
   
-    return mail.send(msg)
+    mail.send(msg)
 
 
 
