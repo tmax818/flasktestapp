@@ -15,9 +15,10 @@ def about():
 @app.route('/mail')
 def mail():
     msg = Message("Hello",
-        sender="from@example.com",
+        sender="test",
         recipients=["tmax818@mac.com"])
-    mail.send(msg)
+  
+    return mail.send(msg)
 
 
 
