@@ -1,6 +1,7 @@
 from flask import Flask, render_template
-from flask_mail import Message
+from flask_mail import Mail, Message
 app = Flask(__name__)
+mail = Mail(app)
 
 
 @app.route('/')
@@ -16,6 +17,7 @@ def mail():
     msg = Message("Hello",
         sender="from@example.com",
         recipients=["tmax818@mac.com"])
+    mail.send(msg)
 
 
 
